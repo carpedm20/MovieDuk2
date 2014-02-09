@@ -29,10 +29,9 @@ class Movie(models.Model):
   time = models.SmallIntegerField(null=True) # runtime
   year = models.SmallIntegerField(null=True)
 
-  open_year = models.DateTimeField(null=True)
+  open_date = models.DateTimeField(null=True)
 
   poster_url = models.SlugField(null=True)
-  # http://movie.naver.com/movie/bi/mi/photoListJson.nhn?movieCode=89627&size=8&offset=8
   photo_url = ListField()
   official_url = models.SlugField(null=True)
   external_url = models.SlugField(null=True)
@@ -73,7 +72,7 @@ class Award(models.Model):
 class Role(models.Model):
   person = models.ForeignKey('Person')
 
-  role = models.CharField(max_length=30, null=True, blank=True)
+  role = models.CharField(max_length=1, choices=ROLE_CHOICES)
   title = models.CharField(max_length=30, null=True, blank=True)
 
   def __unicode__(self):

@@ -9,8 +9,15 @@ media
 
 # environment
 venv
+activate
+
+# scrapper
+scrapper
 
 # database
 *.json
 *.sqlite
+
+# etc
+cheatsheet.md
 

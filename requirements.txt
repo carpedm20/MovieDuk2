@@ -1,2 +1,19 @@
-# Install all of our production dependencies only.
--r requirements/prod.txt
+Django==1.6.2
+Jinja2==2.7.2
+MarkupSafe==0.18
+Pygments==1.6
+Scrapy==0.22.1
+South==0.8.4
+Sphinx==1.2.1
+Twisted==13.2.0
+argparse==1.2.1
+cssselect==0.9.1
+distribute==0.6.24
+docutils==0.11
+lxml==3.3.0
+pyOpenSSL==0.13.1
+queuelib==1.1.1
+six==1.5.2
+w3lib==1.5
+wsgiref==0.1.2
+zope.interface==4.1.0
