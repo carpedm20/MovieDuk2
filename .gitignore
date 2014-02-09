@@ -1,4 +1,16 @@
+# django
 *.log
 *.pot
 *.pyc
 local_settings.py
+
+# static
+media
+
+# environment
+venv
+
+# database
+*.json
+*.sqlite
+
